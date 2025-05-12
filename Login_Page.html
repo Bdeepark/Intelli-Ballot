@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login in Online Voting System</title>
+    <script src="https://kit.fontawesome.com/53eec51060.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .left img {
+            position: relative;
+            width: 20%;
+            opacity: 0.5;
+        }
+
+        body {
+            background: url('alt.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+
+        .container {
+            /* border: 12px solid black; */
+            color: black;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            /* left: 10%; */
+
+        }
+
+        .fonts {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .container h1 {
+
+            width: 80%;
+            font-size: 40px;
+            border-bottom: 3px solid rgb(89, 191, 220);
+            margin-bottom: 30px;
+            padding: 10px 0px;
+            display: inline-block;
+
+        }
+
+        .box {
+
+            width: 100%;
+            border-bottom: 2px solid rgb(89, 191, 220);
+            margin: 30px 0px;
+            /* border: 2px solid purple; */
+        }
+
+        .box input {
+            font-family: 'Cardo', serif;
+            background: none;
+            width: 80%;
+            /* margin: 13px 0px; */
+            padding: 5px 10px;
+            font-size: 15px;
+            border: none;
+            outline: none;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .btn {
+            font-family: 'Cormorant Garamond', serif;
+            cursor: pointer;
+            outline: none;
+           margin: 12px 5px;
+            padding: 10px 22px;
+            border-radius: 10px;
+            font-size: 20px;
+            background: none;
+            /* color: rgb(141, 225, 142); */
+            color: rgb(75, 26, 224);
+            /* font-weight: bold; */
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background-color: rgb(255, 254, 253);
+            color: rgb(210, 28, 28);
+            font-size: large;
+            opacity: 0.9;
+            font-weight: bold;
+        }
+
+        .box i {
+            width: 25px;
+            /* float: left; */
+            text-align: center;
+            /* padding: 0px 12px; */
+        }
+
+        .link {
+            /*color: white; */
+            color: black;
+        }
+
+        #write {
+            color: black;
+            font-size: 20px;
+            font-family: 'Forum', cursive;
+            font-weight: bold;
+        }
+
+        #vid {
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <img src="logo.png" alt="The Page is loading">
+    </div>
+    <form method="post" action="checking.php">
+
+        <div class="container">
+            <h1 class="fonts"> Voter Login </h1>
+            <div class="box">
+                <i class="fa fa-id-card"></i>
+                <input type="text" id="vid" name="vid" placeholder="Enter your VoterID" required>
+
+            </div>
+            <div class="box">
+                <i class="fa fa-key"></i>
+                <input type="password" name="pass" id="pass" placeholder="Enter your password">
+            </div>
+            
+            <button class="btn" type="submit">Log In</button>
+
+            <!--<p id="write" color="red"></i>-->
+                <button class="btn"><a href="forgot.html">Forgot Password?</a></button>
+           
+            <p id="write"> Have not Registered??
+                <button class="btn"><a class="btn" href="Signup.html">Sign In</a></button>
+            </p>
+
+        </div>
+    </form>
+</body>
+
+</html>
